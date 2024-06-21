@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1280px; */
+            width: 80vw;
+            margin: auto;
+            background-color: aquamarine;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            height: 80vh;
+            margin: 23px auto;
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+
+        .container p {
+            font-size: 2em;
+            /*The font-size becomes 2*18=36px as font-size gets inherited*/
+        }
+
+        /* html{
+            font-size: 12px;
+        } */
+        .container2 p {
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            height: 80vh;
+            margin: 23px auto;
+            font-size: 1rem;
+            background-color: aquamarine;
+        }
+
+        .mycont {
+            background-color: brown;
+            color: yellow;
+            font-size: 22px;
+            width: 100vmax;
+        }
+        .cont1{
+            border: 2px solid black;
+        }
+        .cont1 div{
+            border: 2px solid brown;
+            width: 50%;
+        }
+        .cont1 div div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus fugit obcaecati ipsum, doloremque
+            officiis facilis ut ex possimus suscipit dolore distinctio error adipisci?
+        </p>
+    </div>
+    <div class="container2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam magnam, culpa adipisci error obcaecati
+            dignissimos! Laborum eum corrupti aut sapiente quidem blanditiis soluta!
+        </p>
+    </div>
+    <div class="mycont">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quam rerum inventore repudiandae praesentium
+        eaque facere quidem expedita non ab porro numquam libero quisquam unde ut a, recusandae vel odio!
+    </div>
+    <div class="cont1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, nemo esse laborum earum eum praesentium consequatur optio quis tenetur amet nihil animi ex illum, voluptates at facere deleniti iure molestias!
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab delectus, commodi facilis quam animi facere! Harum minima adipisci ipsam? Ut iure soluta cumque obcaecati similique aspernatur sit quae nemo quis.
+            <div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis autem eius delectus repudiandae minus accusamus odit perspiciatis? Laboriosam quisquam distinctio rerum laudantium officiis eaque numquam minus optio! Nobis, cumque error?
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

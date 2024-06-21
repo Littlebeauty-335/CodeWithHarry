@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            width: 300px;
+            /* justify-content: space-between; */
+            align-items:center;
+            /* flex-direction: row;
+            flex-wrap: wrap-reverse; */
+            /* align-content: center; */
+            flex-flow: row wrap;
+            /* gap: 5px; */
+            /* row-gap: 5px;
+            column-gap: 5px; */
+        }
+        .item{
+            height: 62px;
+            /* width: 150px; */
+            background-color: purple;
+            border: 1px solid black;
+            /* margin: 5px; */
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        .order-1{
+            /* order: 1; */
+            /* flex-grow: 2; */
+            /* align-self:flex-end; */
+        }
+         .order-2{
+            /* order: 2; */
+            /* align-self: flex-start; */
+        }
+        .order-3{
+            /* order: 3; */
+            flex-shrink: 5;
+            /* align-self: center; */
+        } 
+    </style>
+</head>
+<body>
+    <main>
+       <div class="container">
+        <div class="item order-1">Ina</div>
+        <div class="item order-2">Meena</div>
+        <div class="item order-3">Dika</div>
+        <div class="item">4</div>  
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">4</div>  
+        <div class="item">5</div>
+        <div class="item">6</div>
+     
+       </div> 
+    </main>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style> 
+#main {
+  width: 350px;
+  height: 100px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+}
+
+#main div {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100px;
+}
+
+#main div:nth-of-type(2) {
+  flex-shrink: 3;
+}
+</style>
+</head>
+<body>
+
+<h1>The flex-shrink Property</h1>
+
+<div id="main">
+  <div style="background-color:coral;"></div>
+  <div style="background-color:lightblue;"></div>
+  <div style="background-color:khaki;"></div>
+  <div style="background-color:pink;"></div>
+  <div style="background-color:lightgrey;"></div>
+</div>
+
+<p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the flex-shrink property.</p>
+
+</body>
+</html> -->

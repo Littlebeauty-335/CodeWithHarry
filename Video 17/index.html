@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectorst</title>
+    <style>
+        /* Element selector */
+        div {
+            /* background-color: red; */
+        }
+        /* Class selector */
+         .red{
+            color: red;
+         }
+         /* Id Selector */
+         #green{
+            color: green;
+         }
+         /* Child Selector */
+         div > p{
+            color: blue;
+         }
+         /* Descendent element */
+         div span{
+            color: orange;
+         }
+
+         /* Pseudo Selectors */
+         a:active{
+            background-color: red;
+         }
+         a:visited{
+            color: yellow;
+         }
+         a:link{
+            color: brown;
+         }
+         a:hover{
+            color: pink;
+         }
+         p:first-child{    /* Turns the color of paragraph element  to wherever <p> element is the first child of it's descendent. */
+            color: aqua;
+         }
+
+    </style>
+</head>
+
+<body>
+    <div class="red">
+        I am a div.
+    </div>
+    <div id="green">I am also a div element</div>
+    <div>
+        <p>
+            I am a paragraph element.
+        </p>
+        <span>I am a span element.</span>
+    </div>
+    <a href="http://google.com">Google</a>
+    <a href="http://kiit.ac.in">KIIT</a>
+
+    <div>
+        <p>I am a H1 element</p>
+        <h2>I am a H2 element</h2>
+    </div>
+</body>
+
+</html>

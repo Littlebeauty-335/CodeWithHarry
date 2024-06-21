@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+
+        .head {
+            display: flex;
+            justify-content: space-around; /* Only one justify-content needed */
+            align-items: center; /* Center vertically */
+        }
+
+        .navbar {
+            list-style: none;
+            display: flex;
+            gap: 50px;
+            font-size: 15px;
+        }
+
+        .navbar li {
+            cursor: pointer;
+        }
+
+        .body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 50vh;
+        }
+
+        .body .paragraph {
+            display: block;
+            text-align: center; /* Center text within paragraphs */
+            margin-bottom: 20px; /* Add space between paragraphs */
+        }
+
+        .container1 {
+            font-size: 40px;
+        }
+
+        .container2 {
+            font-size: 25px;
+            text-align: center;
+            line-height: 1.5; /* Adjust line height */
+        }
+
+        .btn {
+            background-color: #00b6d1;
+            font-size: 15px; /* Adjust button font size */
+            border-radius: 5px;
+            border-width: 0px;
+            color: white;
+            padding: 15px 20px; /* Adjust button padding */
+            font-weight: 567;
+            cursor: pointer; /* Add pointer cursor */
+        }
+
+        .body2 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+
+        .body2 img {
+            margin: 15px;
+            height: 60px;
+            width: 60px;
+        }
+
+        .body2 p {
+            font-size: 25px;
+        }
+
+        .body2 span {
+            font-size: 15px;
+        }
+
+        .container {
+            display: grid;
+            place-content: center;
+            grid-template-columns: repeat(3, 1fr); /* Adjust grid layout */
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .item {
+            background-color: rgb(225, 221, 221);
+            height: 100px;
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Adjust button styles */
+        .container button {
+            background-color: #00b6d1;
+            font-size: 15px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        /* Add hover effect on buttons */
+        .container button:hover {
+            background-color: #0083a3;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <img src="logo.webp" alt="logo" height="60px" width="170px">
+        <ul class="navbar">
+            <li>Products <img src="arrow-down-sign-to-navigate.png" alt="" height="10px" width="10px"></li>
+            <li>Pricing <img src="arrow-down-sign-to-navigate.png" alt="" height="10px" width="10px"></li>
+            <li>Resources <img src="arrow-down-sign-to-navigate.png" alt="" height="10px" width="10px"></li>
+            <li>About us <img src="arrow-down-sign-to-navigate.png" alt="" height="10px" width="10px"></li>
+            <li>Security and compliance <img src="arrow-down-sign-to-navigate.png" alt="" height="10px" width="10px"></li>
+            <li><img src="lang.png" alt=""></li>
+        </ul>
+    </div>
+
+    <div class="body">
+        <div class="paragraph container1">
+            <p>Download <strong>UltraEdit</strong> for Windows <img src="orange.png" alt=""></p>
+        </div>
+        <div class="paragraph container2">
+            <p>Download and try UltraEdit before you buy it! This download includes the full Windows</p>
+            <p>version of the text editor.</p>
+        </div>
+        <button class="btn">DOWNLOAD MAC OR LINUX VERSION</button>
+    </div>
+
+    <div class="body2">
+        <img src="UE_logo_icon_white.png" alt="">
+        <p>Download UltraEdit <span>v2023.2(released 2023/12/15) | Hotfix</span></p>
+    </div>
+
+    <div class="container">
+        <div class="item item-1">
+            <h4>English</h4>
+            <p class="small">English</p>
+            <button class="btn">Download 32-bit</button>
+            <button class="btn">Download 64-bit</button>
+        </div>
+        <div class="item item-1">
+            <h4>English</h4>
+            <p class="small">English</p>
+            <button class="btn">Download 32-bit</button>
+            <button class="btn">Download 64-bit</button>
+        </div>
+        <div class="item item-1">
+            <h4>English</h4>
+            <p class="small">English</p>
+            <button class="btn">Download 32-bit</button>
+            <button class="btn">Download 64-bit</button>
+        </div>
+        <div class="item item-1">
+            <h4>English</h4>
+            <p class="small">English</p>
+            <button class="btn">Download 32-bit</button>
+            <button class="btn">Download 64-bit</button>
+        </div>
+        <div class="item item-1">
+            <h4>English</h4>
+            <p class="small">English</p>
+            <button class="btn">Download 32-bit</button>
+            <button class="btn">Download 64-bit</button>
+        </div>
+        <div class="item item-1">
+            <h4>English</h4>
+            <p class="small">English</p>
+            <button class="btn">Download 32-bit</button>
+            <button class="btn">Download 64-bit</button>
+        </div>
+        <div class="item item-1">
+            <h4>English</h4>
+            <p class="small">English</p>
+            <button class="btn">Download 32-bit</button>
+            <button class="btn">Download 64-bit</button>
+        </div>
+        <!-- Repeat similar structure for other grid items -->
+    </div>
+</body>
+</html>
